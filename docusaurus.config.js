@@ -15,15 +15,15 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://disc-ita-frontend.vercel.app/',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'ARTS Discover Program', // Your GitHub org/user name.
+  projectName: 'ita-disc-inventory', // Your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -43,10 +43,9 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          // Remove this to remove the "edit this page" links
+          editUrl: 'https://github.com/your-organization/DISC/tree/main/documentation',
+          routeBasePath: '/', // Serve the docs at the site's root
         },
         blog: {
           showReadingTime: true,
@@ -74,23 +73,31 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
-      navbar: {
-        title: 'My Site',
-        logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+      image: 'static/img/ITA_Logo.png',
+      docs: {
+        sidebar: {
+          hideable: true,
+          autoCollapseCategories: false,
         },
+      },
+      navbar: {
+        title: 'ITA Inventory Management System',
+        logo: {
+          alt: 'DISC Logo',
+          src: 'img/logo.svg',
+          href: 'https://disc-ita-frontend.vercel.app/login',
+          target: '_blank',
+        },
+        hideOnScroll: false,
         items: [
           {
             type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
+            sidebarId: 'docs',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Documentation',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/your-organization/DISC',
             label: 'GitHub',
             position: 'right',
           },
@@ -103,8 +110,16 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: 'Introduction',
+                to: '/introduction',
+              },
+              {
+                label: 'Installation',
+                to: '/installation',
+              },
+              {
+                label: 'Usage Guide',
+                to: '/usage',
               },
             ],
           },
@@ -112,34 +127,17 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'GitHub Discussions',
+                href: 'https://github.com/your-organization/DISC/discussions',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'X',
-                href: 'https://x.com/docusaurus',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                label: 'Issues',
+                href: 'https://github.com/your-organization/DISC/issues',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} ITA. Built with Docusaurus.`,
       },
       prism: {
         theme: prismThemes.github,
