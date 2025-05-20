@@ -73,14 +73,6 @@ Administrators with super_admin privileges can manage program budgets:
 3. Adjust program budgets as needed
 4. View spending reports and projections
 
-## Keyboard Shortcuts
-
-| Action | Shortcut |
-| ------ | -------- |
-| Create new order | Ctrl+N (Windows) / Cmd+N (Mac) |
-| Refresh dashboard | F5 |
-| Log out | Ctrl+L (Windows) / Cmd+L (Mac) |
-
 ## Troubleshooting
 
 - **Can't log in**: Verify your credentials and ensure your account is active

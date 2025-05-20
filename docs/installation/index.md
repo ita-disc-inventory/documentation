@@ -4,22 +4,32 @@ sidebar_position: 2
 
 # Installation
 
-This guide will walk you through the process of setting up the DISC application on your local development environment.
+This guide will walk you through the process of setting up the ITA application on your local development environment.
 
 ## Prerequisites
 
-Before installing DISC, ensure you have the following installed:
+Before installing the ITA Inventory web app, ensure you have the following installed:
 
 - [Node.js](https://nodejs.org/) (v16 or higher)
 - [npm](https://www.npmjs.com/) (v8 or higher) or [Yarn](https://yarnpkg.com/)
-- [PostgreSQL](https://www.postgresql.org/) (v13 or higher)
 - [Git](https://git-scm.com/) for cloning the repository
 
-## Clone the Repository
+## Clone the Repositories
+Clone each repository separately:
 
+**Frontend**
 ```bash
-git clone https://github.com/yourusername/DISC.git
-cd DISC
+git clone https://github.com/ita-disc-inventory/frontend.git
+```
+
+**Backend**
+```bash
+git clone https://github.com/ita-disc-inventory/backend.git
+```
+
+**Documentation**
+```bash
+git clone https://github.com/ita-disc-inventory/documentation.git
 ```
 
 ## Backend Setup
@@ -33,39 +43,7 @@ npm install
 
 ### Database Setup
 
-1. Create a PostgreSQL database for DISC:
-
-```bash
-createdb disc_db
-```
-
-2. Copy the example environment file and configure it with your database credentials:
-
-```bash
-cp .env.example .env
-```
-
-3. Edit the `.env` file with your database connection details:
-
-```
-DB_HOST=localhost
-DB_USER=postgres
-DB_PASSWORD=your_password
-DB_NAME=disc_db
-JWT_SECRET=your_secret_key
-```
-
-4. Run database migrations:
-
-```bash
-npm run migrate
-```
-
-5. (Optional) Seed the database with sample data:
-
-```bash
-npm run seed
-```
+backend setup...
 
 ## Frontend Setup
 
@@ -85,7 +63,7 @@ cp .env.example .env
 Edit the `.env` file to point to your backend:
 
 ```
-REACT_APP_BACKEND_URL=http://localhost:5000
+REACT_APP_BACKEND_URL=http://localhost:5050
 ```
 
 ## Running the Application
@@ -118,11 +96,5 @@ If you encounter issues during installation:
 2. Verify database connection details in the `.env` file
 3. Check that all dependencies were properly installed
 4. Ensure required ports (3000, 5000) are available
-
-For database connection issues, try:
-
-```bash
-psql -U postgres -h localhost -d disc_db
-```
 
 If you can connect via psql but the application can't, check your database credentials in the `.env` file. 

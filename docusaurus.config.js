@@ -84,7 +84,7 @@ const config = {
         title: 'ITA Inventory Management System',
         logo: {
           alt: 'DISC Logo',
-          src: 'img/logo.svg',
+          src: 'img/ITA_Logo.png',
           href: 'https://disc-ita-frontend.vercel.app/login',
           target: '_blank',
         },

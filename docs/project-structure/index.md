@@ -4,69 +4,66 @@ sidebar_position: 4
 
 # Project Structure
 
-The DISC application follows a modern client-server architecture, with separate frontend and backend components. This page provides an overview of the project structure to help developers understand the codebase.
+The ITA Inventory application follows a modern client-server architecture, with separate frontend and backend components. This page provides an overview of the project structure to help developers understand the codebase.
 
 ## Root Directory Structure
 
 ```
-/
+.
 ├── frontend/            # React frontend application
 ├── backend/             # Node.js backend server
-├── documentation/       # Project documentation (Docusaurus)
-├── .github/             # GitHub workflow configurations
-├── package.json         # Root package.json for project-wide scripts
-└── README.md            # Project overview and quick start guide
+└── documentation/       # Project documentation (Docusaurus)
 ```
 
 ## Frontend Structure
 
 ```
 frontend/
-├── public/              # Static assets
-│   ├── index.html       # HTML template
-│   └── assets/          # Images, fonts, etc.
+├── public/              # Static assets (Images, fonts, etc.)
+│   ├── index.html       # HTML file serving as root entry point
+│   └── .png's...        # Assortment of pngs
 ├── src/                 # Source code
 │   ├── App.jsx          # Main application component
 │   ├── index.jsx        # Application entry point
 │   ├── common/          # Shared components and utilities
-│   │   ├── components/  # Reusable UI components
+│   │   ├── components/  # Reusable components
 │   │   │   ├── form/    # Form components
 │   │   │   ├── navigation/  # Navigation components
-│   │   │   ├── table_pop_ups/  # Popup dialogs for tables
+│   │   │   ├── table_pop_ups/  # Popup dialogs for order table
 │   │   │   ├── templates/  # Component templates
 │   │   │   └── admin_modals/  # Admin-specific modals
-│   │   ├── contexts/    # React context providers
-│   │   └── utils/       # Utility functions
+│   │   ├── contexts/    # Custom context providers for user authentication & placing orders
+│   │   └── utils/       # Status & Program mappings, constants, etc.
 │   └── pages/           # Page components organized by routes
-│       ├── admin/       # Admin pages
-│       ├── auth/        # Authentication pages
-│       ├── therapist/   # Therapist pages
-│       └── settings/    # User settings pages
-├── package.json         # Frontend dependencies and scripts
-└── .env                 # Environment variables
+│       ├── account/     # Account/Profile pages
+│       ├── admin/       # Admin-only pages
+│       ├── Home/        # Home page
+│       ├── not-found/   # 'Not Found' page, similar to 404
+│       ├── settings/    # Settings page
+└──     ├── therapist/   # Therapist Home page
 ```
 
 ## Backend Structure
 
 ```
 backend/
-├── src/                 # Source code
-│   ├── app.js           # Express application setup
-│   ├── server.js        # Server entry point
-│   ├── controllers/     # Request handlers
-│   ├── models/          # Database models
-│   ├── routes/          # API route definitions
-│   ├── middleware/      # Middleware functions
-│   ├── services/        # Business logic
-│   └── utils/           # Utility functions
-├── config/              # Configuration files
-│   └── database.js      # Database connection setup
-├── migrations/          # Database migration files
-├── seeds/               # Database seed data
-├── package.json         # Backend dependencies and scripts
-└── .env                 # Environment variables
+├── src/                  # Source code
+|   ├── config/           # Express application setup
+|   ├── controllers/      # Server entry point
+|   ├── middleware/       # Request handlers
+│   ├── routes/           # API route definitions
+│   └── server.js         # Utility functions
+└── README.md             # MDX doc for backend
 ```
 
+## Documentation Structure
+```
+documentation/
+├── blog/                 # Responsible for publishing updates regarding ITA app
+├── docs/                 # Holds all documentation sub-pages 
+├── src/                  # Contains components and styling used for docs site
+├── static/               # Images used on docs site
+```
 ## Key Files
 
 ### Frontend

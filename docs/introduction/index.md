@@ -25,35 +25,19 @@ The ITA Inventory Management System website is a web application designed to str
 - **Vercel**: Hosting and deploying platform
 
 ## Project Structure Overview
-The project follows a modular structure, split up by the frontend and backend:
+The project follows a modular structure, split up by the frontend, backend, and documentation:
 ```
-/
-├── frontend/                 # React frontend application (CRA)
-|   ├── public/               # Images and Icons
-|   ├── src/                  # Main frontend app directory
-|   |   ├── assets/           # Reusable SVGs
-|   |   ├── common/           # Directory containing main app components
-|   |   |   ├── components/   # Reusable components
-|   |   |   ├── contexts/     # Custom contexts to track users and orders 
-|   |   |   ├── layouts/      # Base layouts for app (e.g. Navbar)
-|   |   |   ├── utils/        # Constants, mappings, etc.
-|   |   ├── pages/            # Application pages
-|   |   ├── utils/            # Util for localStorage tracking
-|   |   ├── App.css           # CSS file for App component
-|   |   ├── App.jsx           # Main application file
-|   |   ├── index.css         # Global CSS file
-├── backend/                  # Node.js backend server
-|   ├── src/                  # Main backend directory
-|   |   ├── config/           # Supabase config 
-|   |   ├── controllers/      # Handles API calls based on router
-|   |   ├── middleware/       # Authentication and request processing middleware
-|   |   ├── routes/           # API route definitions
-|   |   ├── server.js         # Main server entry point
-├── documentation/            # Project documentation (Docusaurus)
-|   ├── blog/                 # Responsible for publishing updates regarding ITA app
-|   ├── docs/                 # Holds all documentation sub-pages 
-|   ├── src/                  # Contains components and styling used for docs site
-|   ├── static/               # Images used on docs site
+.
+├── frontend/          # React frontend application (CRA)
+|   ├── public/        # Images and Icons
+|   ├── src/           # Main frontend app directory
+├── backend/           # Node.js backend server
+|   ├── src/           # Main backend directory
+├── documentation/     # Project documentation (Docusaurus)
+|   ├── blog/          # Responsible for publishing updates regarding ITA app
+|   ├── docs/          # Holds all documentation sub-pages 
+|   ├── src/           # Contains components and styling used for docs site
+|   ├── static/        # Images used on docs site
 ```
 
 ## Quick Links
