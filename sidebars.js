@@ -44,6 +44,11 @@ const sidebars = {
         },
         {
           type: 'doc',
+          id: 'handoff-docs/Overview/index',
+          label: 'Overview'
+        },
+        {
+          type: 'doc',
           id: 'handoff-docs/future-development/index',
           label: 'Future Development'
         },
