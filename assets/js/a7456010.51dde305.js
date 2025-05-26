@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkita_inventory_docs=self.webpackChunkita_inventory_docs||[]).push([[1235],{8552:e=>{e.exports=JSON.parse('{"name":"docusaurus-plugin-content-pages","id":"default"}')}}]);
