@@ -15,15 +15,15 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://disc-ita-frontend.vercel.app/',
+  url: 'https://ita-disc-inventory.github.io/',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/documentation/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'ARTS Discover Program', // Your GitHub org/user name.
-  projectName: 'ita-disc-inventory', // Your repo name.
+  organizationName: 'ita-disc-inventory', // Your GitHub org/user name.
+  projectName: 'documentation', // Your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -43,8 +43,6 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
-          // Remove this to remove the "edit this page" links
-          editUrl: 'https://github.com/your-organization/DISC/tree/main/documentation',
           routeBasePath: '/', // Serve the docs at the site's root
         },
         blog: {
@@ -111,11 +109,11 @@ const config = {
             items: [
               {
                 label: 'Installation',
-                to: '/installation',
+                to: '/documentation-docs/installation',
               },
               {
                 label: 'Usage Guide',
-                to: '/usage',
+                to: '/documentation-docs/usage',
               },
             ],
           },

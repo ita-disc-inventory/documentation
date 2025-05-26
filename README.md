@@ -38,4 +38,6 @@ Not using SSH:
 $ GIT_USER=<Your GitHub username> yarn deploy
 ```
 
+Note: When prompted for a password, you must use a GitHub Personal Access Token (PAT) with `repo` (or `public_repo`) permissions, not your GitHub account password. Alternatively, you can set the `GIT_PASS` environment variable to your PAT: `GIT_USER=<Your GitHub username> GIT_PASS=<Your PAT> yarn deploy`.
+
 If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.

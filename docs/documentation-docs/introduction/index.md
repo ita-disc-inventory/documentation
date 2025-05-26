@@ -51,7 +51,6 @@ The project follows a modular structure, split up by the frontend, backend, and 
 ```
 
 ## Quick Links
-- [Setup & Installation](/installation)
-- [Quick Start](/installation#quick-start)
-- [Usage Guide](/usage)
-- [Project Structure](/project-structure)
+- [Setup & Installation](/documentation-docs/installation/)
+- [Usage Guide](/documentation-docs/usage/)
+- [Project Structure](/documentation-docs/project-structure/)
