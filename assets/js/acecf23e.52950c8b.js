@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkita_inventory_docs=self.webpackChunkita_inventory_docs||[]).push([[1903],{1912:t=>{t.exports=JSON.parse('{"blogBasePath":"/documentation/blog","blogTitle":"Blog","authorsListPath":"/documentation/blog/authors"}')}}]);
